@@ -1,0 +1,271 @@
+/* =========================================
+   Estilo Cyberpunk / Futuristic High-Tech
+========================================= */
+
+/* Palette Globale & Fondo Oscuro */
+body {
+    font-family: 'Consolas', 'Courier New', monospace, system-ui;
+    line-height: 1.6;
+    color: #c0caf5;
+    background-color: #08090f;
+    background-image: 
+        radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.8), #050508);
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedores Principales */
+header, main, footer {
+    max-width: 920px;
+    margin: 0 auto;
+    background-color: #0d0f18;
+    border: 1px solid #00f3ff;
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.15), inset 0 0 15px rgba(0, 243, 255, 0.05);
+}
+
+/* Header & Título Principal */
+header {
+    text-align: center;
+    padding: 40px 20px 25px;
+    border-bottom: 2px solid #ff0055;
+    border-radius: 8px 8px 0 0;
+    margin-top: 30px;
+}
+
+header h1 {
+    color: #00f3ff;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.7), 0 0 20px rgba(0, 243, 255, 0.4);
+    margin-bottom: 20px;
+}
+
+/* Navegación Neón */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff0055;
+    background-color: #121524;
+    padding: 8px 18px;
+    border: 1px solid #ff0055;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px rgba(255, 0, 85, 0.2);
+}
+
+nav a:hover {
+    color: #08090f;
+    background-color: #ff0055;
+    box-shadow: 0 0 15px rgba(255, 0, 85, 0.8);
+}
+
+/* Secciones y Encabezados */
+section {
+    padding: 35px 40px;
+    border-bottom: 1px dashed rgba(0, 243, 255, 0.2);
+}
+
+h2 {
+    color: #00f3ff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-left: 4px solid #ff0055;
+    padding-left: 12px;
+    margin-top: 0;
+    text-shadow: 0 0 8px rgba(0, 243, 255, 0.4);
+}
+
+h3 {
+    color: #bd93f9;
+    letter-spacing: 1px;
+}
+
+/* Imágenes y Citas */
+figure {
+    margin: 30px 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #00f3ff;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
+}
+
+figcaption {
+    font-size: 0.85rem;
+    color: #00f3ff;
+    margin-top: 10px;
+}
+
+blockquote {
+    border-left: 4px solid #00f3ff;
+    margin: 25px 0;
+    padding: 15px 20px;
+    background-color: #121524;
+    color: #f1fa8c;
+    border-radius: 0 6px 6px 0;
+    box-shadow: inset 0 0 10px rgba(0, 243, 255, 0.1);
+}
+
+/* Tabla Comparativa Futurista */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: #121524;
+    border: 1px solid #00f3ff;
+}
+
+table caption {
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #ff0055;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+th, td {
+    border: 1px solid #1f2338;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #1a1d30;
+    color: #00f3ff;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+    background-color: #16192b;
+}
+
+tr:hover {
+    background-color: #1f243d;
+    color: #ffffff;
+}
+
+/* Acordeón FAQ */
+details {
+    background-color: #121524;
+    border: 1px solid #383a59;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    padding: 12px 15px;
+}
+
+details[open] {
+    border-color: #00f3ff;
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #00f3ff;
+}
+
+/* Formulario Futurista */
+fieldset {
+    border: 1px solid #ff0055;
+    border-radius: 6px;
+    padding: 25px;
+    background-color: #121524;
+    box-shadow: 0 0 10px rgba(255, 0, 85, 0.1);
+}
+
+legend {
+    font-weight: bold;
+    color: #ff0055;
+    padding: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #00f3ff;
+    font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #08090f;
+    border: 1px solid #383a59;
+    color: #50fa7b;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #00f3ff;
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+}
+
+button[type="submit"] {
+    background-color: transparent;
+    color: #50fa7b;
+    padding: 12px 25px;
+    border: 1px solid #50fa7b;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px rgba(80, 250, 123, 0.2);
+}
+
+button[type="submit"]:hover {
+    background-color: #50fa7b;
+    color: #08090f;
+    box-shadow: 0 0 18px rgba(80, 250, 123, 0.8);
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 40px;
+    border-radius: 0 0 8px 8px;
+    font-size: 0.85rem;
+    color: #6272a4;
+    border-top: 1px solid #ff0055;
+}
+
+footer a {
+    color: #00f3ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-shadow: 0 0 8px rgba(0, 243, 255, 0.8);
+}
