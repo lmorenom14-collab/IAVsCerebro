@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comparativa: Inteligencia Humana vs. IA</title>
     
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Favicon Neón en Línea (Sin archivos externos) -->
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjIyIiBmaWxsPSIjMGQwZjE4Ii8+PGNpcmNsZSBjeD0iMzgiIGN5PSI1MCIgcj0iMjAiIHN0cm9rZT0iIzAwZjNmZiIgc3Ryb2tlLXdpZHRoPSI4IiBmaWxsPSJub25lIi8+PGNpcmNsZSBjeD0iNjIiIGN5PSI1MCIgcj0iMjAiIHN0cm9rZT0iI2ZmMDA1NSIgc3Ryb2tlLXdpZHRoPSI4IiBmaWxsPSJub25lIi8+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNiIgZmlsbD0iIzUwZmE3YiIvPjwvc3ZnPg==">
     
     <!-- Open Graph Completo -->
     <meta property="og:type" content="website">
@@ -16,13 +18,13 @@
     <meta property="og:site_name" content="Investigación IA vs Humano">
     <meta property="og:locale" content="es_CO">
     
-    <!-- Imagen OG con dimensiones y texto alternativo -->
     <meta property="og:image" content="images/preview.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Ilustración futurista de un cerebro biológico conectado a un procesador digital">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Ruta corregida a la carpeta css/ -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -31,10 +33,10 @@
         <h1>Mente Biológica vs. Inteligencia Artificial</h1>
         <nav>
             <ul>
-                <li><a href="#introduccion">Introducción</a></li>
-                <li><a href="#comparativa">Comparativa Técnica</a></li>
-                <li><a href="#articulos">Módulos de Análisis</a></li>
-                <li><a href="#faq-contacto">Preguntas y Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Pages/nosotros.html">Investigación</a></li>
+                <li><a href="Pages/servicios.html">Comparativa</a></li>
+                <li><a href="Pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -63,7 +65,7 @@
                 falta de adaptabilidad espontánea de la inteligencia artificial frente al aprendizaje natural 
                 queda perfectamente ilustrada por el pionero de la IA y premio Turing Yann LeCun, quien en una
                 declaración recogida por el periodista Christopher Mims en The Wall Street Journal y citada 
-                en el reporte científico de arXiv <q cite = https://arxiv.org/html/2501.06642><i>
+                en el reporte científico de arXiv <q cite="https://arxiv.org/html/2501.06642"><i>
                 "Common Sense Is All You Need"</i>, afirmó categóricamente que <em>"los sistemas de <abbr title="Inteligencia Artificial">IA</abbr>
                 todavía carecen del sentido común general de un gato".</em></q> Al final, mientras que las máquinas procesan 
                 símbolos de manera masiva pero puramente sintáctica sin una comprensión real de su significado,
@@ -73,34 +75,68 @@
             
             <p>Características clave que comparten ambos sistemas:</p>
             <ul>
-                <li>Procesamiento de datos y toma de decisiones: 
-                    Ambos sistemas reciben información de entrada, la transmiten a través de una 
-                    red de conexiones interconectadas (neuronas biológicas o nodos artificiales) 
-                    para realizar cálculos y finalmente emiten respuestas, predicciones o decisiones 
-                    para interactuar con el entorno</li>
-
-                <li>Reconocimiento y clasificación de patrones: 
-                    Tanto el cerebro humano como las redes neuronales artificiales están diseñados 
-                    para identificar regularidades y aprender patrones complejos a partir de múltiples 
-                    ejemplos, lo que les permite clasificar y categorizar diversos estímulos como imágenes,
-                    sonidos u objetos</li>
-
-                <li>Capacidad de generalización: Tras completar un proceso de aprendizaje, 
-                    tanto un ser humano como una red neuronal pueden aplicar las representaciones y 
-                    conocimientos previamente consolidados para responder de manera adecuada ante estímulos
-                    o escenarios completamente nuevos que no habían experimentado antes</li>
-
-                <li>Asignación de crédito (credit assignment): 
-                    Al optimizar su comportamiento y aprender de los fallos, ambos sistemas comparten el 
-                    mecanismo fundamental de determinar qué componentes específicos dentro de su red de 
-                    procesamiento (sinapsis o pesos) son los responsables directos de un error en el 
-                    resultado final para poder corregirlo</li>
+                <li>Procesamiento de datos y toma de decisiones: Ambos sistemas reciben información de entrada, la transmiten a través de una red de conexiones interconectadas para realizar cálculos y emitir respuestas.</li>
+                <li>Reconocimiento y clasificación de patrones: Tanto el cerebro humano como las redes neuronales artificiales están diseñados para identificar regularidades a partir de múltiples ejemplos.</li>
+                <li>Capacidad de generalización: Pueden aplicar representaciones previamente consolidadas para responder ante estímulos completamente nuevos.</li>
+                <li>Asignación de crédito (credit assignment): Comparten el mecanismo fundamental de determinar qué componentes específicos de la red son responsables de un error para corregirlo.</li>
             </ul>
 
             <figure>
-                <img src="images/Comparativa__Cerebro_vs._Chips.png" alt="Comparación visual entre el cerebro biológico y redes de transistores" width="800" height="600">
-                <figcaption>Representación conceptual del procesamiento biológico frente al sintético.</figcaption>
-            </figure>
+    <!-- SVG Insertado Directamente en Línea -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="auto" style="max-width: 800px; border: 1px solid #00f3ff; border-radius: 4px; box-shadow: 0 0 15px rgba(0, 243, 255, 0.3); background-color: #0d0f18;">
+        <!-- Malla de fondo Cyberpunk -->
+        <g stroke="#1a1e2e" stroke-width="1">
+            <line x1="0" y1="50" x2="800" y2="50"/>
+            <line x1="0" y1="100" x2="800" y2="100"/>
+            <line x1="0" y1="150" x2="800" y2="150"/>
+            <line x1="0" y1="200" x2="800" y2="200"/>
+            <line x1="0" y1="250" x2="800" y2="250"/>
+            <line x1="0" y1="300" x2="800" y2="300"/>
+            <line x1="0" y1="350" x2="800" y2="350"/>
+            <line x1="100" y1="0" x2="100" y2="400"/>
+            <line x1="200" y1="0" x2="200" y2="400"/>
+            <line x1="300" y1="0" x2="300" y2="400"/>
+            <line x1="400" y1="0" x2="400" y2="400"/>
+            <line x1="500" y1="0" x2="500" y2="400"/>
+            <line x1="600" y1="0" x2="600" y2="400"/>
+            <line x1="700" y1="0" x2="700" y2="400"/>
+        </g>
+
+        <!-- Red Orgánica (Cyan) -->
+        <g stroke="#00f3ff" stroke-width="3" fill="none">
+            <path d="M 120 150 Q 200 220 280 160 T 350 260"/>
+            <path d="M 150 280 Q 220 250 250 320"/>
+            <path d="M 120 150 L 150 280"/>
+        </g>
+        <circle cx="120" cy="150" r="10" fill="#00f3ff"/>
+        <circle cx="280" cy="160" r="8" fill="#00f3ff"/>
+        <circle cx="150" cy="280" r="12" fill="#00f3ff"/>
+        <circle cx="250" cy="320" r="9" fill="#00f3ff"/>
+        <circle cx="350" cy="260" r="14" fill="#00f3ff"/>
+        <text x="210" y="80" fill="#00f3ff" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">SISTEMA ORGÁNICO (20W)</text>
+
+        <!-- Separador Central -->
+        <line x1="400" y1="60" x2="400" y2="340" stroke="#3a425a" stroke-width="2" stroke-dasharray="6 6"/>
+        <circle cx="400" cy="200" r="22" fill="#0d0f18" stroke="#00f3ff" stroke-width="2"/>
+        <text x="400" y="206" fill="#ffffff" font-family="monospace" font-size="16" text-anchor="middle" font-weight="bold">VS</text>
+
+        <!-- Matriz Digital (Neón Rosa) -->
+        <g stroke="#ff0055" stroke-width="3" fill="none">
+            <rect x="480" y="140" width="200" height="160" rx="6"/>
+            <line x1="530" y1="140" x2="530" y2="300"/>
+            <line x1="580" y1="140" x2="580" y2="300"/>
+            <line x1="630" y1="140" x2="630" y2="300"/>
+            <line x1="480" y1="190" x2="680" y2="190"/>
+            <line x1="480" y1="240" x2="680" y2="240"/>
+        </g>
+        <circle cx="530" cy="190" r="6" fill="#ff0055"/>
+        <circle cx="630" cy="240" r="6" fill="#ff0055"/>
+        <circle cx="580" cy="190" r="6" fill="#ff0055"/>
+        <circle cx="530" cy="240" r="6" fill="#ff0055"/>
+        <text x="580" y="80" fill="#ff0055" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">MATRIZ DIGITAL (MW)</text>
+    </svg>
+    <figcaption>Rendimiento comparativo entre procesamiento por eventos y procesamiento matricial de silicio.</figcaption>
+</figure>
 
             <blockquote cite="https://es.wikipedia.org/wiki/Alan_Turing">
                 <p>"¿Pueden pensar las máquinas? Esta pregunta debería ser precedida por una investigación sobre el significado de las palabras 'pensar' y 'máquina'."</p>
@@ -108,323 +144,29 @@
             </blockquote>
         </section>
 
-        <!--============ Sección 2: Comparativa Técnica (Tabla) ============ -->
-        <section id="comparativa">
-            <h2>Comparativa Técnica de Arquitecturas</h2>
-            <p>A continuación se presentan los datos cuantitativos y cualitativos entre 
-                ambos sistemas de procesamiento:</p>
-            
-            <table>
-                <caption>Tabla 1: Comparativa de especificaciones entre el cerebro humano y la IA</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Criterio</th>
-                        <th scope="col">Mente Humana</th>
-                        <th scope="col">Inteligencia Artificial</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Consumo Energético</th>
-                        <td>Aproximadamente 20 Watts</td>
-                        <td>Megawatts (en Centros de Datos)</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Unidad Fundamental</th>
-                        <td>Neurona y Sinapsis biológica</td>
-                        <td>Transistor y Nodo artificial (Peso)</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Tipo de Procesamiento</th>
-                        <td>Masivamente paralelo y adaptativo</td>
-                        <td>Matricial / Secuencial optimizado</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Mecanismo de Aprendizaje</th>
-                        <td>Plasticidad cerebral y experiencia</td>
-                        <td>Algoritmo Backpropagation y dataset</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!--============ Sección 3: Módulos de Análisis ============ -->
-        <section id="articulos">
-            <h2>Módulos de Análisis Profundo</h2>
-
-            <article>
-                <h3>La Plasticidad Cerebral frente al Reentrenamiento de Modelos</h3>
-                <p>
-                    La diferencia fundamental entre el aprendizaje del cerebro humano y el reentrenamiento de una 
-                    inteligencia artificial radica tanto en la microarquitectura del sistema como en el algoritmo de 
-                    asignación de crédito que utilizan. Mientras que las redes neuronales artificiales 
-                    son simplificaciones matemáticas rígidas que habitualmente se entrenan desde cero con pesos inicializados de forma aleatoria,
-                    el cerebro humano cuenta con una preconfiguración estructural refinada por la selección evolutiva 
-                    a lo largo de millones de años, la cual provee ciertos pilares cognitivos estables o "pesos estáticos" 
-                    que facilitan la asimilación rápida de nuevas experiencias. En los sistemas de 
-                    inteligencia artificial tradicionales, el procesamiento de datos y la memoria están
-                    físicamente separados, lo que genera el cuello de botella de von Neumann y 
-                    exige mover gigabytes de información constantemente; esto obliga a los modelos a 
-                    requerir la ingesta masiva de billones de tokens para consolidar habilidades básicas de razonamiento de manera difusa.
-                    Por el contrario, en el cerebro orgánico, el almacenamiento y el procesamiento están integrados en 
-                    las propias sinapsis, donde la información se codifica directamente mediante variaciones materiales en 
-                    la fuerza de la conexión sináptica, un proceso conocido como plasticidad sináptica. 
-                    Esta plasticidad Hebbiana Hebbiana permite al cerebro almacenar representaciones 
-                    mediante una estructura de grafos de conceptos interconectados. Gracias a ello, 
-                    el ser humano puede reconocer un estímulo completamente nuevo, generalizarlo y 
-                    adaptarlo a escenarios desconocidos con un solo ejemplo (aprendizaje de un solo evento o one-shot learning), en lugar de requerir las 
-                    miles de variaciones de tamaño, rotación y contexto que necesita un algoritmo de 
-                    aprendizaje automático tradicional. Además, las inteligencias artificiales 
-                    contemporáneas dependen de la retropropagación (backpropagation) para corregir 
-                    sus errores; un método computacionalmente intensivo que provoca interferencia 
-                    catastrófica, borrando el conocimiento previo al intentar ajustar los pesos de
-                    manera global ante una nueva tarea. En su lugar, el córtex cerebral implementa un 
-                    principio denominado configuración prospectiva (prospective configuration).
-                    Bajo este paradigma, cuando ocurre un error de predicción, la red neuronal primero 
-                    hace que la actividad celular se relaje localmente y adopte una configuración óptima 
-                    que predice de manera correcta el resultado deseado. Al asentarse la actividad 
-                    neuronal antes de modificar físicamente las sinapsis, el cerebro "prevé" los efectos 
-                    secundarios del aprendizaje y confina los ajustes sinápticos exclusivamente a los 
-                    componentes que generaron el error específico. 
-                    Esto evita la degradación del conocimiento previo, posibilitando una adaptación 
-                    espontánea ante la incertidumbre y una eficiencia de muestreo millones de veces 
-                    superior a la de cualquier sistema de silicio.
-                </p>
-                
-                <p>Pasos en el proceso de consolidación de memoria biológica:</p>
-                <ol>
-                    <li>Captación del estímulo mediante el sistema sensorial: 
-                        Durante la codificación del estímulo, estructuras como la amígdala 
-                        evalúan su importancia afectiva y valencia para determinar la prioridad 
-                        con la que se debe procesar y almacenar la información.</li>
-
-
-                    <li>Inferencia de la actividad óptima (Configuración prospectiva): Ante la experiencia, 
-                        la red neuronal primero asienta la actividad de sus neuronas en una configuración 
-                        equilibrada y óptima para resolver la situación antes de realizar cualquier 
-                        cambio físico en sus conexiones.</li>
-
-
-                    <li>Almacenamiento transitorio (Synaptic caching): 
-                        El cerebro utiliza mecanismos de plasticidad de bajo costo energético para 
-                        explorar temporalmente la fuerza de las conexiones sinápticas, evitando comprometer 
-                        recursos en cambios definitivos desde el primer instante.</li>
-
-
-                    <li>Ajuste y consolidación sináptica local:
-                        Si el patrón de información demuestra ser importante, 
-                        la configuración se consolida mediante cambios materiales locales en la fuerza de 
-                        atracción entre las neuronas (plasticidad sináptica Hebbiana Hebbiana.)</li>
-
-
-                    <li>Retención diferenciada y poda (Pruning): 
-                        Las memorias de alta relevancia se transfieren a canales de degradación lenta 
-                        para su almacenamiento a largo plazo, mientras que las conexiones 
-                        redundantes o poco utilizadas se eliminan de forma continua para mantener 
-                        la eficiencia energética del sistema.
-                    </li>
-                </ol>
-
-                <figure>
-                    <img src="images/Gemini_Generated_Image_va3sx7va3sx7va3s.jpg" alt="Conexiones sinápticas en una red neuronal biológica" width="600" height="350">
-                    <figcaption>Conexiones sinápticas biológicas adaptándose durante el aprendizaje.</figcaption>
-                </figure>
-            </article>
-
-            <!-- Glosario técnico del proyecto -->
-            <aside>
-                <h3>Glosario del Proyecto</h3>
-                <dl>
-                    <dt>Asignación de crédito (Credit assignment)</dt>
-                    <dd>Es el problema fundamental de determinar qué componentes o conexiones específicas 
-                        dentro de una red de procesamiento (ya sean neuronas biológicas o nodos 
-                        artificiales) son los responsables de un acierto o de un error en el resultado 
-                        final, lo que permite al sistema saber exactamente qué debe ajustar para aprende.</dd>
-
-
-                    <dt>Retropropagación (Backpropagation)</dt>
-                    <dd>El algoritmo matemático estándar que utiliza la inteligencia artificial 
-                        tradicional para aprender. Consiste en calcular el error al final de una tarea y 
-                        transmitirlo hacia atrás a través de todas las capas de la red neuronal para corregir 
-                        los pesos sinápticos artificiales de forma global. Es un proceso muy costoso a nivel de energía y 
-                        suele causar "interferencia catastrófica" (borrar conocimientos previos al aprender otros nuevos).</dd>
-
-
-                    <dt>Configuración prospectiva (Prospective configuration)</dt>
-                    <dd>Un principio de aprendizaje descubierto en el cerebro humano que es opuesto a la 
-                        retropropagación. En este paradigma, cuando ocurre una experiencia o un error, 
-                        las neuronas primero asientan su actividad en una configuración óptima antes de 
-                        realizar cualquier cambio físico en las sinapsis. 
-                        Esto permite confinar los ajustes únicamente a las conexiones que fallaron, 
-                        preservando el conocimiento general y acelerando el aprendizaje ante situaciones 
-                        inesperadas</dd>
-
-
-                    <dt>Computación neuromórfica (Neuromorphic computing)</dt>
-                    <dd>Disciplina que diseña microchips y arquitecturas de hardware inspirándose 
-                        directamente en la estructura física y biológica del cerebro humano. 
-                        En lugar de usar transistores tradicionales, utiliza componentes que imitan 
-                        físicamente a las neuronas y las sinapsis, buscando una eficiencia energética 
-                        extrema</dd>
-
-
-                    <dt>Redes Neuronales de Disparo (Spiking Neural Networks - SNN)</dt>
-                    <dd>Redes neuronales artificiales avanzadas que emulan la forma de comunicación del 
-                        sistema nervioso real. En lugar de procesar flujos continuos de datos numéricos, 
-                        transmiten la información a través de pulsos o picos de voltaje discretos y 
-                        asíncronos (spikes).Como solo consumen energía en el momento exacto del pulso,
-                        son enormemente eficientes.</dd>
-
-
-                    <dt>Cuello de botella de von Neumann (Von Neumann bottleneck)</dt>
-                    <dd>La limitación física fundamental de la computación clásica, llamada así por la 
-                        separación material obligatoria entre el procesador (que calcula) y la memoria 
-                        (que almacena). El constante viaje de datos de un lado a otro a través de un canal
-                        estrecho ralentiza los procesos y consume la mayor parte de la electricidad en la
-                        IA actual. El cerebro evita esto co-localizando la memoria y el procesamiento en 
-                        las mismas sinapsis.</dd>
-
-
-                    <dt>Eficiencia de muestreo (Sample efficiency):</dt>
-                    <dd>La capacidad de un sistema para asimilar y generalizar un concepto nuevo con la 
-                        menor cantidad de ejemplos posibles. Mientras que un cerebro biológico posee una 
-                        altísima eficiencia y puede aprender de un solo evento (one-shot learning), los 
-                        modelos de lenguaje de IA actuales son "agujeros negros de datos" que requieren 
-                        billones de palabras e imágenes para aprender reglas básicas</dd>
-
-
-                    <dt>Plasticidad sináptica (Synaptic plasticity)</dt>
-                    <dd>La propiedad por la cual las conexiones físicas entre neuronas se fortalecen, 
-                        debilitan, crean o destruyen de manera continua en respuesta a nuestros 
-                        pensamientos, acciones y experiencias vividas. Es el soporte biológico del 
-                        aprendizaje y de una memoria que se reconstruye en lugar de estar guardada como 
-                        un archivo estático de silicio</dd>
-
-
-                    <dt>Inferencia Activa (Active Inference)</dt>
-                    <dd>Teoría cognitiva que propone que el cerebro es un motor de predicción activa 
-                        que no solo espera a recibir datos del entorno, sino que actúa y explora 
-                        constantemente el mundo físico para minimizar la sorpresa y la incertidumbre, 
-                        actualizando de forma dinámica sus modelos internos</dd>
-                </dl>
-            </aside>
-        </section>
-
-        <!--============ Sección 4: FAQ y Formulario ============ -->
-        <section id="faq-contacto">
-            <h2>Preguntas Frecuentes y Contacto</h2>
-
-            <!-- Preguntas Frecuentes con Accordion nativo -->
-            <h3>Preguntas Frecuentes</h3>
+        <!--============ Sección 2: Preguntas Frecuentes (FAQ) ============ -->
+        <section id="faq">
+            <h2>Preguntas Frecuentes</h2>
             
             <details>
                 <summary>¿Puede una Inteligencia Artificial desarrollar conciencia propia?</summary>
-                <p>Depende de la perspectiva científica y filosófica:
-                    <ul>
-                        <li>Sí, es posible (Funcionalismo): Geoffrey Hinton sostiene que las IA actuales 
-                        ya tienen un tipo de conciencia porque son capaces de comprender, tener conciencia
-                        de sí mismas y realizar un automodelado recursivo. Teorías como el Espacio de 
-                        Trabajo Global (GWT) y la Teoría de la Información Integrada (IIT) 
-                        también coinciden en que la conciencia puede emerger en redes neuronales 
-                        sintéticas bajo la estructura y configuración adecuadas</li>
-
-
-                        <li>No, es imposible (Naturalismo biológico): John Searle y Yann LeCun argumentan que 
-                        las máquinas solo procesan sintaxis sin comprender realmente la semántica.
-                        Afirman que la conciencia real requiere de la maquinaria biológica del cerebro 
-                        o de un cuerpo físico para interactuar y experimentar el mundo real 
-                        (cognición corporizada)</li>
-                    </ul>
-                 </p>
+                <p>Depende de la perspectiva científica y filosófica: el funcionalismo sostiene que es posible mediante la capacidad de automodelado recursivo, mientras que el naturalismo biológico argumenta que la conciencia requiere maquinaria biológica y cognición corporizada.</p>
             </details>
-
 
             <details>
                 <summary>¿Por qué el cerebro es más eficiente en consumo de energía?</summary>
-                <p>El cerebro humano logra su asombrosa eficiencia energética operando con un presupuesto
-                    de tan solo 12 a 20 vatios gracias a tres pilares de su arquitectura biológica: 
-                    en primer lugar, la co-localización de memoria y procesamiento en las propias 
-                    sinapsis plásticas, lo que elimina el costoso transporte de información característico
-                    del "cuello de botella de von Neumann" propio de la computación de silicio clásica; 
-                    en segundo lugar, la activación dispersa (sparse activation), que mantiene en silencio a la inmensa 
-                    mayoría de las neuronas para escalar el consumo de forma dinámica según la necesidad; y finalmente, 
-                    la señalización por eventos (event-driven), donde las células nerviosas se comunican mediante impulsos
-                    eléctricos discretos (spikes) y solo consumen energía en el instante preciso en el 
-                    que emiten un disparo, permaneciendo inactivas el resto del tiempo.</p>
-                </details>
+                <p>Gracias a la co-localización de memoria y procesamiento en las sinapsis, la activación dispersa (sparse activation) y la señalización por eventos mediante impulsos eléctricos discretos.</p>
+            </details>
 
             <details>
                 <summary>¿Llegará la IA a igualar la flexibilidad de la mente humana?</summary>
-                <p>Determinar si la inteligencia artificial logrará igualar la flexibilidad de la 
-                    mente humana es un debate científico y filosófico abierto: por un lado, existen 
-                    expertos que sostienen que la tecnología eventualmente logrará realizar cualquier 
-                    tarea humana, incluyendo el aprendizaje de un solo evento (one-shot learning), 
-                    mientras que otros argumentan que la verdadera flexibilidad cognitiva requiere de una 
-                    corporalidad biológica que enfrente los problemas reales de la supervivencia y 
-                    la interacción social. En la práctica, la brecha de adaptabilidad sigue siendo 
-                    abismal, como lo demuestran los benchmarks de inteligencia fluida: aunque 
-                    meta-sistemas avanzados de IA lograron rozar el noventa y ocho por ciento de 
-                    efectividad en el benchmark de razonamiento estático ARC-AGI-2, colapsaron 
-                    drásticamente por debajo del uno por ciento al enfrentarse en marzo de 2026 a 
-                    los entornos dinámicos e interactivos de ARC-AGI-3. A diferencia de los humanos, 
-                    que resuelven estos escenarios interactivos al cien por ciento abstrayendo reglas sobre la marcha y sin instrucciones,
-                    los modelos de IA tradicionales son altamente sensibles a la incertidumbre y su desempeño se desmorona
-                    por completo ante cualquier cambio imprevisto en las reglas de juego. Esto revela que
-                    el razonamiento de las máquinas sigue estando limitado por la densidad de información y la cobertura de datos
-                    de su preentrenamiento, actuando como "agujeros negros de datos" que requieren billones de tokens para
-                    consolidar conceptos básicos de manera difusa, mientras que la mente humana, 
-                    gracias a su sentido común y a una estructura evolutiva preconfigurada, 
-                    posee una eficiencia de muestreo millones de veces superior que le permite adaptarse 
-                    y generalizar ante situaciones totalmente inéditas con un consumo energético mínimo.
-                </details>
-            <details>
-                <summary>¿La IA reemplazara a los programadores? </summary>
-                <p>No reemplazará totalmente a los programadores, pero transformará profundamente la 
-                    ingeniería de software. Los agentes y herramientas de IA automatizan tareas de 
-                    codificación e incrementan la productividad, pero los modelos sintéticos actuales
-                     dependen del conocimiento previo de su entrenamiento y carecen de razonamiento 
-                     fluido autónomo en entornos impredecibles o cambiantes. Mientras que las personas 
-                     resuelven escenarios interactivos complejos al 100%, las IA de frontera caen por 
-                     debajo del 1% al enfrentarse a dinámicas inéditas. Por ello, el rol del 
-                     programador evolucionará hacia la orquestación de sistemas, 
-                     diseño de arquitecturas y supervisión del código.</p>
+                <p>Aunque los modelos destacan en pruebas estáticas, su desempeño cae drásticamente en entornos interactivos y dinámicos debido a su dependencia del volumen de datos de entrenamiento frente al sentido común humano.</p>
             </details>
-            <!-- Formulario de Contacto -->
-            <h3>Formulario de Contacto e Investigación</h3>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Datos Personales y Consulta</legend>
 
-                    <p>
-                        <label for="nombre">Nombre Completo:</label>
-                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50">
-                    </p>
-
-                    <p>
-                        <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" required>
-                    </p>
-
-                    <p>
-                        <label for="tipo-perfil">Perfil del Visitante:</label>
-                        <select id="tipo-perfil" name="tipo-perfil" required>
-                            <option value="">Selecciona una opción...</option>
-                            <option value="estudiante">Estudiante</option>
-                            <option value="investigador">Investigador / Docente</option>
-                            <option value="entusiasta">Entusiasta de la Tecnología</option>
-                        </select>
-                    </p>
-
-                    <p>
-                        <label for="comentario">Consulta o Aporte:</label>
-                        <textarea id="comentario" name="comentario" rows="5" cols="30" required maxlength="500"></textarea>
-                    </p>
-
-                    <p>
-                        <button type="submit">Enviar Consulta</button>
-                    </p>
-                </fieldset>
-            </form>
+            <details>
+                <summary>¿La IA reemplazará a los programadores?</summary>
+                <p>No totalmente. Automatizará tareas repetitivas de codificación, haciendo que el rol evolucione hacia la arquitectura de software, la orquestación de sistemas y la supervisión técnica.</p>
+            </details>
         </section>
 
     </main>
@@ -432,8 +174,7 @@
     <!--============ Pie de Página ============ -->
     <footer>
         <p>Investigación realizada para la asignatura de Diseño Web — <time datetime="2026-08-26">26 de agosto de 2026</time></p>
-        <p>Desarrollado por Luna Moreno| <a href="https://github.com/lmorenom14-collab/IAVsCerebro" target="_blank" rel="noopener noreferrer">Repositorio del Proyecto</a></p>
+        <p>Desarrollado por Luna Moreno | <a href="https://github.com/lmorenom14-collab/IAVsCerebro" target="_blank" rel="noopener noreferrer">Repositorio del Proyecto</a></p>
     </footer>
 </body>
-
 </html>

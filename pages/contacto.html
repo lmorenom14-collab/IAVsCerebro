@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Consultas | Mente Biológica vs. IA</title>
+    
+    <!-- Favicon (ruta corregida a images/) -->
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    
+    <!-- Metadatos de Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contacto y Consultas: Mente Biológica vs. IA">
+    <meta property="og:description" content="Envía tus preguntas académicas, comentarios y aportes sobre el estudio comparativo de inteligencia humana e IA.">
+    <meta property="og:image" content="../images/preview.jpg">
+
+    <!-- CSS principal (ruta corregida a css/) -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <!--============ Encabezado Principal ============ -->
+    <header>
+        <h1>Contacto y Colaboración Académica</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Investigación</a></li>
+                <li><a href="servicios.html">Comparativa</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--============ Contenido Principal ============ -->
+    <main>
+
+        <!--============ Sección 1: Formulario de Contacto ============ -->
+        <section id="formulario-contacto">
+            <h2>Formulario de Consulta e Investigación</h2>
+            <p>Si deseas realizar un aporte, solicitar información sobre la metodología o colaborar con el proyecto de analítica de datos, completa el siguiente formulario:</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Identificación del Consultante</legend>
+
+                    <p>
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50" placeholder="Ej. Luna Moreno">
+                    </p>
+
+                    <p>
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                    </p>
+
+                    <p>
+                        <label for="tipo-perfil">Perfil del Visitante:</label>
+                        <select id="tipo-perfil" name="tipo-perfil" required>
+                            <option value="">Selecciona una opción...</option>
+                            <option value="estudiante">Estudiante de Pregrado / Posgrado</option>
+                            <option value="investigador">Investigador / Docente</option>
+                            <option value="entusiasta">Entusiasta de la Tecnología e IA</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles del Mensaje o Aporte</legend>
+
+                    <p>
+                        <label for="asunto">Asunto Principal:</label>
+                        <input type="text" id="asunto" name="asunto" required minlength="4" maxlength="100" placeholder="Ej. Consulta sobre Computación Neuromórfica">
+                    </p>
+
+                    <p>
+                        <label for="comentario">Consulta u Observación Técnica:</label>
+                        <textarea id="comentario" name="comentario" rows="6" cols="30" required maxlength="500" placeholder="Escribe aquí tus observaciones o preguntas sobre el estudio..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar Consulta</button>
+                </p>
+            </form>
+        </section>
+
+        <!--============ Sección 2: Canales e Información Institucional ============ -->
+        <section id="canales-contacto">
+            <h2>Ubicación e Información Académica</h2>
+            <p>Esta investigación es parte de un proyecto de pregrado en ciencias de datos y desarrollo web semántico.</p>
+
+            <address>
+                <p><strong>Ubicación:</strong> Facultad de Ingeniería y Ciencias Básicas</p>
+                <p><strong>Institución:</strong> Universidad Central, Bogotá, Colombia</p>
+                <p><strong>Horario de Atención:</strong> Lunes a Viernes de <time datetime="08:00">08:00</time> a <time datetime="17:00">17:00</time></p>
+                <p><strong>Correo Institucional:</strong> <a href="mailto:lmorenom14@ucentral.edu.co">lmorenom14@ucentral.edu.co</a></p>
+            </address>
+        </section>
+
+        <!--============ Sección 3: Política de Feedback y Calidad ============ -->
+        <section id="soporte-colaboracion">
+            <h2>Revisión por Pares y Calidad Web</h2>
+            <p>
+                Cada observación enviada es revisada para mantener la precisión conceptual de las métricas presentadas en el sitio. Además, este formulario sigue los lineamientos de accesibilidad y etiquetado nativo del <abbr title="World Wide Web Consortium">W3C</abbr>.
+            </p>
+            
+            <article>
+                <h3>Tiempos de Respuesta</h3>
+                <p>Las solicitudes y comentarios académicos son atendidos en un plazo estimado de 24 a 48 horas en días hábiles durante el semestre académico.</p>
+            </article>
+        </section>
+
+    </main>
+
+    <!--============ Pie de Página ============ -->
+    <footer>
+        <p>Investigación realizada para la asignatura de Diseño Web — <time datetime="2026-08-26">26 de agosto de 2026</time></p>
+        <p>Desarrollado por Luna Moreno | <a href="https://github.com/lmorenom14-collab/IAVsCerebro" target="_blank" rel="noopener noreferrer">Repositorio del Proyecto</a></p>
+    </footer>
+</body>
+</html>

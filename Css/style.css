@@ -2,6 +2,11 @@
    Estilo Cyberpunk / Futuristic High-Tech
 ========================================= */
 
+/* Reset y caja general */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* Palette Globale & Fondo Oscuro */
 body {
     font-family: 'Consolas', 'Courier New', monospace, system-ui;
@@ -11,7 +16,7 @@ body {
     background-image: 
         radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.8), #050508);
     margin: 0;
-    padding: 0;
+    padding: 0 15px;
 }
 
 /* Contenedores Principales */
@@ -94,6 +99,20 @@ h3 {
     letter-spacing: 1px;
 }
 
+/* Destacados y Abreviaturas */
+mark {
+    background-color: rgba(255, 0, 85, 0.25);
+    color: #ff0055;
+    padding: 2px 6px;
+    border: 1px solid #ff0055;
+    border-radius: 3px;
+}
+
+abbr[title] {
+    text-decoration: underline dotted #00f3ff;
+    cursor: help;
+}
+
 /* Imágenes y Citas */
 figure {
     margin: 30px 0;
@@ -122,6 +141,33 @@ blockquote {
     color: #f1fa8c;
     border-radius: 0 6px 6px 0;
     box-shadow: inset 0 0 10px rgba(0, 243, 255, 0.1);
+}
+
+/* Cuadrícula de Tarjetas (CSS Grid - servicios.html) */
+.grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.tarjeta {
+    background-color: #121524;
+    border: 1px solid #bd93f9;
+    border-radius: 6px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(189, 147, 249, 0.4);
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+    color: #00f3ff;
+    font-size: 1.1rem;
 }
 
 /* Tabla Comparativa Futurista */
@@ -164,6 +210,31 @@ tr:hover {
     color: #ffffff;
 }
 
+/* Glosario y Aside (nosotros.html) */
+aside dl {
+    background-color: #121524;
+    border: 1px solid #00f3ff;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+dt {
+    font-weight: bold;
+    color: #ff0055;
+    margin-top: 15px;
+    font-size: 1.05rem;
+}
+
+dt:first-child {
+    margin-top: 0;
+}
+
+dd {
+    margin-left: 0;
+    margin-bottom: 15px;
+    color: #c0caf5;
+}
+
 /* Acordeón FAQ */
 details {
     background-color: #121524;
@@ -184,11 +255,12 @@ summary {
     color: #00f3ff;
 }
 
-/* Formulario Futurista */
+/* Formulario Futurista (contacto.html) */
 fieldset {
     border: 1px solid #ff0055;
     border-radius: 6px;
     padding: 25px;
+    margin-bottom: 20px;
     background-color: #121524;
     box-shadow: 0 0 10px rgba(255, 0, 85, 0.1);
 }
@@ -214,12 +286,11 @@ select,
 textarea {
     width: 100%;
     padding: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     background-color: #08090f;
     border: 1px solid #383a59;
     color: #50fa7b;
     border-radius: 4px;
-    box-sizing: border-box;
     font-family: inherit;
 }
 
@@ -250,6 +321,20 @@ button[type="submit"]:hover {
     box-shadow: 0 0 18px rgba(80, 250, 123, 0.8);
 }
 
+/* Dirección Institucional */
+address {
+    font-style: normal;
+    background-color: #121524;
+    border-left: 4px solid #50fa7b;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 0 6px 6px 0;
+}
+
+address a {
+    color: #00f3ff;
+}
+
 /* Pie de Página */
 footer {
     text-align: center;
@@ -268,4 +353,17 @@ footer a {
 
 footer a:hover {
     text-shadow: 0 0 8px rgba(0, 243, 255, 0.8);
+}
+
+/* Adaptabilidad Móvil */
+@media (max-width: 600px) {
+    section {
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 1.6rem;
+    }
+    nav ul {
+        flex-direction: column;
+    }
 }
